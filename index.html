@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/general-styles.css">
+    <link rel="stylesheet" href="./styles/large-buttons.css">
+    <link rel="stylesheet" href="./styles/small-buttons.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Typing Speed Test</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Typing Speed Test</h1>
+        <p>Welcome to the typing speed test! Type as quickly as you can to see how fast you are.</p>
+    </div>
+    <div class="username-container">
+        <label class="userName"></label>
+        <input type="text" id="username" name="username" class="username-input">
+        <button class="button" id="submitButton">Submit a Username</button>
+    </div>
+    <div class="button-container">
+        <div class="start-container">
+            <label class="start-button"></label>
+            <button class="small-start-button" id="startButton">Start</button>
+        </div>
+        <div class="reset-container">
+            <label class="reset-button"></label>
+            <button class="small-reset-button" id="resetButton">Reset</button>
+        </div>
+        <div class="prompt-container">
+            <button class="create-prompt-button" id="createPromptButton">Create a prompt</button>
+            <div id="promptForm" class="prompt-form">
+                <input type="text" id="promptInput" placeholder="Enter your prompt here...">
+                <button class="submit-prompt-button" id="submitPromptButton">Submit</button>
+            </div>
+            <div id="submittedPrompt" style="display: none; margin-top: 20px;">
+                <h3>Your Prompt:</h3>
+                <p id="displayPrompt"></p>
+        </div>
+    </div>
+</body>
+</html>

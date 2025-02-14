@@ -1,4 +1,3 @@
-// ui.js
 export function toggleStartButton() {
 }
 

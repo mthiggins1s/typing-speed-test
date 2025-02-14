@@ -9,7 +9,6 @@ document.getElementById("submitPromptButton").addEventListener("click", function
     submitPrompt();
 });
 
-// Example of how you can manage start/reset buttons:
 document.getElementById("startButton").addEventListener("click", function() {
     toggleStartButton();
 });

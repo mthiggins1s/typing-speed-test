@@ -67,3 +67,11 @@
 #promptForm {
     display: none;
 }
+
+#submittedPrompt {
+    position: relative;
+    top: 0px; 
+    right: 250px;
+}
+
+/* Styles for Dropdown */

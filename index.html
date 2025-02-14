@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./styles/general-styles.css">
     <link rel="stylesheet" href="./styles/large-buttons.css">
     <link rel="stylesheet" href="./styles/small-buttons.css">
-    <script src="scripts/script.js" defer></script>
     <title>Typing Speed Test</title>
 </head>
 <body>
@@ -34,10 +33,12 @@
                 <input type="text" id="promptInput" placeholder="Enter your prompt here...">
                 <button class="submit-prompt-button" id="submitPromptButton">Submit</button>
             </div>
-            <div id="submittedPrompt" style="display: none; margin-top: 20px;">
+            <div class="submit-prompt-color" id="submittedPrompt" style="display: none; margin-top: 20px;">
                 <h3>Your Prompt:</h3>
                 <p id="displayPrompt"></p>
+            </div>
         </div>
     </div>
+    <script type="module" src="scripts/script.js" defer></script>
 </body>
 </html>

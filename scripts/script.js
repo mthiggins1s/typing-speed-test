@@ -1,19 +1,19 @@
+import { showPromptForm, submitPrompt } from './prompt.js';
+import { toggleStartButton, toggleResetButton } from './ui.js';
+
 document.getElementById("createPromptButton").addEventListener("click", function() {
-    document.getElementById("promptForm").style.display = "block";
-    document.getElementById("createPromptButton").style.display = "none";
+    showPromptForm();
 });
 
 document.getElementById("submitPromptButton").addEventListener("click", function() {
-    var userPrompt = document.getElementById("promptInput").value;
-    
-    if (userPrompt) {
-        document.getElementById("displayPrompt").textContent = userPrompt;
-        document.getElementById("submittedPrompt").style.display = "block"; 
-        
-        document.getElementById("promptInput").value = "";  
-        document.getElementById("promptForm").style.display = "none";  
-        document.getElementById("createPromptButton").style.display = "block";  
-    } else {
-        alert("Please enter a prompt!");
-    }
+    submitPrompt();
+});
+
+// Example of how you can manage start/reset buttons:
+document.getElementById("startButton").addEventListener("click", function() {
+    toggleStartButton();
+});
+
+document.getElementById("resetButton").addEventListener("click", function() {
+    toggleResetButton();
 });
